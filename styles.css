@@ -341,5 +341,25 @@ body.dark-mode .hero-button:hover {
   }
 }
 
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f5efe6; /* Light grey background */
+  color: #333;
+  font-size: 14px;
+  margin-top: 40px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode footer {
+  background-color: #121212; /* Dark mode background */
+  color: #ccc; /* Dark mode text color */
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+
 
 
