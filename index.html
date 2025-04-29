@@ -25,17 +25,27 @@
     </div>
     
     <div class="loading-text">Loading your page...</div>
+
+    <div class="loading-dots">
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+    </div>
     
     <script>
-        // Redirect after 5 seconds (5000 milliseconds)
-        setTimeout(function() {
+    setTimeout(function() {
+            document.getElementById('loader').classList.add('fade-out');
+            document.getElementById('loading-text').classList.add('fade-out');
+        }, 4500); // Start fade-out after 4.5s
+
+    setTimeout(function() {
             window.location.href = "indextest1.html"; 
-        }, 5000);
+        }, 5000); // Redirect after 5s
     </script>
 </body>
 
 <!-- note: this website is nothing but a hamster wheel animation with a redirect to another page after 5 seconds. -->
-    
+
 </html>
 
 
