@@ -317,7 +317,7 @@ body.dark-mode .hero-button:hover {
 
   body.dark-mode .about h1,
   body.dark-mode .about p {
-    color: #f5efe6; /* or a light gray/white color */
+    color: #f5efe6; 
   }
   
 .fade-in {
@@ -361,7 +361,7 @@ footer p {
 }
 
 .hero-btn {
-  --color: #5D9C59; /* Islamic green, you can change */
+  --color: #5D9C59; 
   font-family: 'DM Sans', sans-serif;
   display: inline-block;
   width: 8em;
