@@ -408,6 +408,61 @@ footer p {
   transition: background 0s;
 }
 
+.info-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: var(--bg-light, #f5efe6);
+}
 
+.info-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-family: "DM Sans", sans-serif;
+}
 
+.info-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.info-card {
+  background-color: var(--card-bg, #ffffff);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+.info-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.info-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.info-section {
+  background-color: #f5efe6;
+  color: #222;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .info-section {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .info-card {
+  background-color: #1c1c1c;
+  color: #e0e0e0;
+}
 
