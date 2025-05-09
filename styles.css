@@ -19,7 +19,7 @@ body {
   font-family: 'Noto Sans Arabic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f5efe6;
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
-  padding: 0 1 rem;
+  padding: 0 1rem;
 }
 
 header {
@@ -512,4 +512,9 @@ body.dark-mode .info-card {
   color: #e0e0e0;
 }
 
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
 
