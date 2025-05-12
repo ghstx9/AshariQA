@@ -74,48 +74,6 @@ nav a:hover {
   transform: scale(1.05); 
 }
 
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  header nav {
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-  }
-
-  header nav a {
-    padding: 8px 12px;
-    font-size: 0.95rem;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .hero-btn {
-    font-size: 1rem;
-    padding: 0.6rem 1.2rem;
-  }
-
-  .info-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .info-card {
-    width: 90%;
-    max-width: 300px;
-    margin-bottom: 20px;
-  }
-}
-
 #mode-toggle {
   background: none;
   border: none;
@@ -517,4 +475,47 @@ body.dark-mode .info-card {
   margin: 0 auto;
   padding: 0 1rem;
 }
+
+/* Wrap nav and switch in a container for control */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  header {
+    padding: 10px 15px;
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  header nav {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  header nav a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+  }
+
+  .switch {
+    transform: scale(0.9);
+    margin-top: 10px;
+  }
+}
+
 
