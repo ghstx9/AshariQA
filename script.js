@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
   const toggleInput = document.getElementById('mode-toggle');
   const body = document.body;
+  const hamburgerBtn = document.getElementById('hamburger-btn');
+  const navMenu = document.getElementById('nav-menu');
 
-  if (!toggleInput) return; // return biar ga error kalau elemen missing
-
-  // ngeload theme dari localStorage
+  // ngeload theme from localStorage
   if (localStorage.getItem('theme') === 'dark') {
     body.classList.add('dark-mode');
     toggleInput.checked = true;
@@ -13,13 +13,23 @@ document.addEventListener('DOMContentLoaded', () => {
     toggleInput.checked = false;
   }
 
-  toggleInput.addEventListener('change', () => {
-    if (toggleInput.checked) {
-      body.classList.add('dark-mode');
-      localStorage.setItem('theme', 'dark');
-    } else {
-      body.classList.remove('dark-mode');
-      localStorage.setItem('theme', 'light');
-    }
-  });
+  // theme toggle handler
+  if (toggleInput) {
+    toggleInput.addEventListener('change', () => {
+      if (toggleInput.checked) {
+        body.classList.add('dark-mode');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        body.classList.remove('dark-mode');
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  }
+
+  // hamburger toggle handler
+  if (hamburgerBtn && navMenu) {
+    hamburgerBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  }
 });
