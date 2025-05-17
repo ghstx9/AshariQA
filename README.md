@@ -6,4 +6,4 @@ I was inspired by IslamQA, the first Islamic fatwa website that ever existed on 
 And today i've uploaded the first ever version of AshariQA.
 
 
-(Note that this is a silly project i've made out of boredom, if you're offended by it then get a grip you Salafi cuck.)
+(Note that this is only a silly project and that this site ONLY looks good on desktop web browser, i have no idea how to modify it so that it is responsive on mobile web browser)
