@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const hamburgerBtn = document.getElementById('hamburger-btn');
   const navMenu = document.getElementById('nav-menu');
 
-  // ngeload theme from localStorage
+  
   if (localStorage.getItem('theme') === 'dark') {
     body.classList.add('dark-mode');
     toggleInput.checked = true;
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     toggleInput.checked = false;
   }
 
-  // theme toggle handler
+ 
   if (toggleInput) {
     toggleInput.addEventListener('change', () => {
       if (toggleInput.checked) {
@@ -26,14 +26,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // hamburger toggle handler
+  
   if (hamburgerBtn && navMenu) {
     hamburgerBtn.addEventListener('click', () => {
       navMenu.classList.toggle('active');
     });
   }
 
-  // Scroll-triggered animation for info-section
+  
   const scrollElements = document.querySelectorAll('.scroll-animate');
   const observer = new IntersectionObserver(
     (entries, observer) => {
