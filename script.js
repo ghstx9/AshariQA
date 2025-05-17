@@ -33,21 +33,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // scroll-triggered fade-in animation
-  const faders = document.querySelectorAll('.fade-in');
+  // Scroll-triggered animation for info-section
+  const scrollElements = document.querySelectorAll('.scroll-animate');
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
 
-  const appearOnScroll = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target); // stop observing after it's visible
-      }
-    });
-  }, {
-    threshold: 0.1 // 10% visibility triggers the animation
-  });
-
-  faders.forEach(el => {
-    appearOnScroll.observe(el);
-  });
+  scrollElements.forEach(el => observer.observe(el));
 });
