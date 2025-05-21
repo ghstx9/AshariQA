@@ -591,6 +591,18 @@ body.dark-mode .info-card {
   .hero p {
     font-size: 1rem;
   }
+
+  .header-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+  .Btn {
+    align-self: center;
+    margin: 8px auto 0 auto;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .hamburger {
@@ -735,6 +747,28 @@ body.dark-mode .info-card {
   .switch {
     align-self: flex-end;
     margin-top: 8px;
+  }
+  body.dark-mode nav#nav-menu {
+    background: #181818;
+  }
+  body.dark-mode nav#nav-menu a {
+    color: #e0e0e0;
+    border-bottom: 1px solid #333;
+    background: none;
+  }
+  body.dark-mode nav#nav-menu a:hover {
+    background: #222;
+    color: #fff;
+  }
+  body.dark-mode .Btn {
+    border: 1px solid #333;
+  }
+  body.dark-mode .svgContainer {
+    border: 1px solid #333;
+    background: #222;
+  }
+  body.dark-mode .BG {
+    background: #222;
   }
 }
 
