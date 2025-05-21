@@ -603,6 +603,28 @@ body.dark-mode .info-card {
     display: flex;
     justify-content: center;
   }
+  body.dark-mode nav#nav-menu {
+    background: #0a0a0a;
+  }
+  body.dark-mode nav#nav-menu a {
+    color: #e0e0e0;
+    border-bottom: 1px solid #222;
+    background: none;
+  }
+  body.dark-mode nav#nav-menu a:hover {
+    background: #222;
+    color: #fff;
+  }
+  body.dark-mode .Btn {
+    border: 1px solid #222;
+  }
+  body.dark-mode .svgContainer {
+    border: 1px solid #222;
+    background: #0a0a0a;
+  }
+  body.dark-mode .BG {
+    background: #0a0a0a;
+  }
 }
 
 .hamburger {
