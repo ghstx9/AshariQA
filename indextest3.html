@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Philosophy - AshariQA</title>
+  <link rel="stylesheet" href="stylesphilo.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+      <div class="header-container">
+        <button class="Btn" aria-label="GitHub" onclick="window.open('https://github.com/ghstx9/AshariQA', '_blank')">
+          <span class="svgContainer">
+            <svg fill="white" viewBox="0 0 496 512" height="1.6em"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+          </span>
+          <span class="BG"></span>
+        </button>
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav id="nav-menu">
+          <a href="indextest1.html">Home</a>
+          <a href="indextest2.html">About</a>
+          <a href="indextest3.html" class="active">Philosophy</a>
+          <a href="indextest4.html">Polemic</a>
+          <a href="indextest5.html">Refutation</a>
+        </nav>
+        <label class="switch">
+          <span class="sun">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <g fill="#ffd43b">
+                <circle r="5" cy="12" cx="12"></circle>
+                <path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path>
+              </g>
+            </svg>
+          </span>
+          <span class="moon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+              <path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path>
+            </svg>
+          </span>
+          <input type="checkbox" class="input" id="mode-toggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </header>
+
+    <section class="philosophy-hero">
+      <h1 class="fade-in">Islamic Philosophy</h1>
+      <p class="fade-in delay-1">"And those who strive in Our [cause] - We will certainly guide them to Our ways. And indeed, Allah is with the doers of good." — Quran 29:69</p>
+    </section>
+
+    <section class="philosophy-content">
+      <div class="wrapper">
+        <div class="philosophy-section scroll-animate">
+          <h2>The Foundation of Knowledge</h2>
+          <p>In Islamic philosophy, knowledge ('ilm) holds a sacred position. The pursuit of knowledge is not merely an intellectual exercise but a spiritual journey that brings one closer to Allah. The Quran emphasizes the importance of knowledge in numerous verses, establishing it as a fundamental pillar of faith and understanding.</p>
+          <p>Islamic scholars have distinguished between different types of knowledge: revealed knowledge (wahy) which comes directly from Allah through His messengers, and acquired knowledge ('aql) which is obtained through reason, observation, and study. Both forms of knowledge are considered complementary and essential for a complete understanding of existence.</p>
+        </div>
+
+        <div class="philosophy-cards">
+          <div class="philosophy-card scroll-animate">
+            <h3>🌟 Aqidah (Creed)</h3>
+            <p>The fundamental beliefs that form the foundation of Islamic faith, including belief in Allah, His attributes, the prophets, the Day of Judgment, and divine decree. Aqidah provides the philosophical framework for understanding existence and purpose.</p>
+          </div>
+          
+          <div class="philosophy-card scroll-animate">
+            <h3>🧠 Reason and Revelation</h3>
+            <p>Islam emphasizes the harmony between reason ('aql) and revelation (wahy). While revelation provides absolute truth, reason serves as a tool to understand and apply this truth in various contexts of human experience.</p>
+          </div>
+          
+          <div class="philosophy-card scroll-animate">
+            <h3>⚖️ Divine Justice</h3>
+            <p>The concept of divine justice (adl) is central to Islamic philosophy. Allah's justice is perfect and encompasses both mercy and wisdom, providing the foundation for moral and ethical frameworks in Islamic thought.</p>
+          </div>
+        </div>
+
+        <div class="philosophy-section scroll-animate">
+          <h2>The Nature of Existence</h2>
+          <p>Islamic philosophy addresses fundamental questions about the nature of existence, the purpose of creation, and humanity's role in the universe. The concept of Tawhid (monotheism) is not just a theological principle but a comprehensive worldview that influences every aspect of philosophical inquiry.</p>
+          <p>The relationship between the Creator and creation is understood through various philosophical frameworks, including discussions on causality, free will versus divine decree (qadar), and the nature of time and eternity. These discussions have shaped Islamic thought for centuries and continue to provide insights for contemporary philosophical discourse.</p>
+        </div>
+
+        <div class="scholars-section scroll-animate">
+          <h2>Great Islamic Philosophers</h2>
+          <div class="scholars-grid">
+            <div class="scholar-card">
+              <h4>Al-Ghazali (1058-1111)</h4>
+              <p>Known as "Hujjat al-Islam," Al-Ghazali revolutionized Islamic philosophy by integrating Sufism with orthodox theology. His work "Ihya Ulum al-Din" remains influential in Islamic spiritual and philosophical thought.</p>
+            </div>
+            
+            <div class="scholar-card">
+              <h4>Ibn Sina (Avicenna) (980-1037)</h4>
+              <p>A polymath who made significant contributions to philosophy, medicine, and science. His philosophical works, particularly on metaphysics and the nature of existence, influenced both Islamic and Western thought.</p>
+            </div>
+            
+            <div class="scholar-card">
+              <h4>Ibn Rushd (Averroes) (1126-1198)</h4>
+              <p>Defended the compatibility of philosophy and religion. His commentaries on Aristotle and his work "Fasl al-Maqal" explored the relationship between philosophical inquiry and religious truth.</p>
+            </div>
+            
+            <div class="scholar-card">
+              <h4>Al-Ash'ari (874-936)</h4>
+              <p>Founder of the Ash'ari school of theology, which became one of the dominant theological schools in Sunni Islam. His work reconciled predestination with human responsibility.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="philosophy-section scroll-animate">
+          <h2>Contemporary Relevance</h2>
+          <p>Islamic philosophy continues to offer valuable perspectives on modern challenges. Questions about ethics in technology, environmental stewardship, social justice, and global governance can benefit from the rich philosophical tradition developed by Islamic scholars over the centuries.</p>
+          <p>The principle of Maslaha (public interest) provides a framework for addressing contemporary issues, while the concept of Khilafah (stewardship) offers insights into humanity's responsibility toward creation and future generations.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Ricky Aldiansyah</p>
+    </footer>
+
+    <script src="scriptphilo.js"></script>
+
+</body>
+</html>
