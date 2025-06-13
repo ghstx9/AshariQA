@@ -822,7 +822,7 @@ body.dark-mode .info-card {
     width: 32px;
     height: 32px;
     margin-bottom: 1rem;
-    color: #519872;
+    color: #39835c;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -832,7 +832,7 @@ body.dark-mode .info-card {
 }
 
 body.dark-mode .card-icon {
-    color: #7dd3fc;
+    color: #68bde4;
 }
 
 body.dark-mode .philosophy-card:hover .card-icon {
